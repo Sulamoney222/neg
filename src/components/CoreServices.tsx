@@ -1,9 +1,7 @@
 "use client"
 import React, { useEffect } from "react"
 import { 
-  FaTruck, 
-  FaShip, 
-  FaPlane, 
+  FaTruck,  
   FaFileInvoice, 
   FaWarehouse, 
   FaRoute 

@@ -4,6 +4,8 @@ import { FaArrowUp } from "react-icons/fa"
 import Image from "next/image"
 import AOS from "aos"
 import "aos/dist/aos.css"
+import { FaQuoteLeft } from "react-icons/fa"
+
 
 const Company = () => {
   useEffect(() => {
@@ -140,9 +142,14 @@ const Company = () => {
                 height={100}
                 className="rounded-full mb-4 object-cover"
               />
-              <p className="text-gray-600 dark:text-gray-100 text-sm mb-4 italic">
-                "{client.review}"
-              </p>
+              
+...
+
+<p className="text-gray-600 dark:text-gray-100 text-sm mb-4 italic flex items-start gap-2">
+  <FaQuoteLeft className="text-blue-600 mt-1" />
+  {client.review}
+</p>
+
               <h4 className="font-semibold text-[#001f3f] dark:text-zinc-400">{client.name}</h4>
               <span className="text-xs text-gray-500">{client.role}</span>
             </div>
